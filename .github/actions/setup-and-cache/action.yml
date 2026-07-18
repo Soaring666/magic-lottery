@@ -16,6 +16,6 @@ runs:
         version: 11
 
     - name: Set node version to ${{ inputs.node-version }}
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         node-version: ${{ inputs.node-version }}
