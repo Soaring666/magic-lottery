@@ -1,5 +1,7 @@
 # Magic Lottery
 
+https://soaring666.github.io/magic-lottery/guide.html
+
 一个简单易用的抽奖库，基于 Fisher-Yates 洗牌算法。
 
 ## 安装
