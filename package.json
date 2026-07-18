@@ -3,6 +3,25 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": "",
+  "description": "A magic library makes your lucky draws simpler.",
+  "homepage": "https://github.com/logeast/magic-lottery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logeast/magic-lottery.git"
+  },
+  "keywords": [
+    "lottery",
+    "Fisher-Yates Shuffle",
+    "magic lottery",
+    "lucky",
+    "random",
+    "shuffle",
+    "raffle",
+    "prize",
+    "winner"
+  ],
   "files": [
     "dist",
     "src"
@@ -13,11 +32,26 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "release": "bumpp package.json --commit --push --tag && git update-ref refs/heads/release refs/heads/main && git push origin release && pnpm publish --access public"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.63.0",
+    "@typescript-eslint/parser": "^8.63.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "bumpp": "^11.1.0",
+    "eslint": "^10.7.0",
+    "prettier": "^3.9.5",
     "typescript": "^5.0.2",
+    "typescript-eslint": "^8.63.0",
     "vite": "^4.4.5",
-    "vite-plugin-dts": "^5.0.3"
+    "vite-plugin-dts": "^5.0.3",
+    "vitest": "^2.1.9"
   }
 }
