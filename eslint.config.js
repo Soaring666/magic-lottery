@@ -14,6 +14,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ["dist/", "docs/.vitepress/dist/"],
+    ignores: ["dist/", "docs/.vitepress/dist/", "docs/.vitepress/cache/"],
   },
 );
